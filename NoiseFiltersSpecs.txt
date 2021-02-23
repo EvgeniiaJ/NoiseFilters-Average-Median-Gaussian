@@ -1,0 +1,52 @@
+        Project 3:
+        
+You are to implement the three image enhancement methods: (1) 3X3 averaging, (2) 3x3 median filter, and (3) 3x3 2D-Gaussian filter. 
+
+(1) This project will produce 3 output files, with image headers: 
+	  a)  averageFilterResult:  The image of the result of 3x3 averaging filter
+    b)  medianFilterResult: The image of the result of 3x3 median filter
+    c)  gaussianFilterResult: The image of the result of 3x3 Gaussian filter
+
+(2) Directions for Image based on averageFilter:
+    a) Print the histogram of averageFilterResult; 
+    b) Using threshold value at 32 to produce a binary image of averageFilterResult;
+    c) prettyPrint the thresholded binary image. 
+
+
+(3) Directions for Image based on medianFilter:
+    a) Print the histogram of medianFilterResult; 
+    b) Using threshold value at 32 to produce a binary image of medianFilterResult;
+    c) prettyPrint the thresholded binary image. 
+
+
+(4) Run your project 1 on gaussianFilter:
+    a) Print the histogram of gaussianFilterResult; 
+    b) Using threshold value at 32 to produce a binary image of gaussianFilterResult
+    c) prettyPrint the thresholded binary image. 
+
+
+I.    Input files:
+a) inFile (argv[1] / args[0]): A txt file representing a grey-scale image with image header.
+b) maskFile (argv[2] / args[1]): a mask for convolution, with the following format:
+
+	  MaskRows MaskCols MaskMin MaskMax, 
+    follow by MaskRows by MaskCols of pixel values
+    
+For example, a 3 by 3 mask may be
+3 3 1 6 
+1 3 1
+3 6 3
+1 3 1
+
+or a 5 by 5 mask may be
+5  5  1  16
+1  3  5  3  1
+3  5 10  5  3
+5 10 16 10  5
+3  5 10  5  3
+1  3  5  3  1
+
+II. 	Output files:
+	averageFilterResult(argv[3] / args[2]):  The image of the result of 3x3 averaging filter
+  medianFilterResult(argv[4] / args[3]): The image of the result of 3x3 median filter
+  gaussianFilterResult(argv[5] / args[4]): The image of the result of 3x3 Gaussian filter
