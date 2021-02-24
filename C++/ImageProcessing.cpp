@@ -142,7 +142,7 @@ void ImageProcessing::computeMedianFilterImage(int** medianFilterArray){
 		for (int j = 1; j < numCols + 1; j++) {
 			loadNeighbors(i, j, neighborsArray);
 			sort(neighborsArray);
-			medianFilterArray[i][j] = neighborsArray[5];
+			medianFilterArray[i][j] = neighborsArray[4];
 
 			if (newMin > medianFilterArray[i][j]) {
 				newMin = medianFilterArray[i][j];
